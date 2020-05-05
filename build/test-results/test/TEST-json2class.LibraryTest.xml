@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="json2class.LibraryTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2020-05-05T13:15:50" hostname="chong-ThinkPad-E490" time="0.018">
+  <properties/>
+  <testcase name="testValidCase0" classname="json2class.LibraryTest" time="0.013"/>
+  <testcase name="testInvalidCase0" classname="json2class.LibraryTest" time="0.001"/>
+  <testcase name="testInvalidCase1" classname="json2class.LibraryTest" time="0.001"/>
+  <testcase name="testInvalidCase2" classname="json2class.LibraryTest" time="0.001"/>
+  <testcase name="testInvalidCase3" classname="json2class.LibraryTest" time="0.001"/>
+  <system-out><![CDATA[{"body":{"things":[{"id":"zhanwan20200425", "thingType":"Gateway", "items":[{"qbad":["property1", "property2"], "ts":1588141630939, "properties":{"property1":"100.0", "property2":"100.0", "property3": "100.0"}}]}]}}
+things:
+	id: zhanwan20200425
+	type: Gateway
+	items: 
+		bad: [ property1 property2 ]
+		ts: 2020-04-29-02-27-10
+		properties: {property2=100.0, property1=100.0, property3=100.0}
+message.java:
+org.json.JSONException: JSONObject["body"] not found.
+{}
+things:
+message.java:
+org.json.JSONException: JSONObject["things"] not found.
+{"body":{}}
+things:
+{"body":{"things":[]}}
+things:
+thing.java:
+org.json.JSONException: JSONObject["id"] not found.
+thing.java:
+org.json.JSONException: JSONObject["id"] not found.
+{"body":{"things":[{},{}]}}
+things:
+	id: null
+	type: null
+	items: 
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

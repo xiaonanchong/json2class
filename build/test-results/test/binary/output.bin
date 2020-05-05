@@ -1,0 +1,28 @@
+Ø{"body":{"things":[{"id":"zhanwan20200425", "thingType":"Gateway", "items":[{"qbad":["property1", "property2"], "ts":1588141630939, "properties":{"property1":"100.0", "property2":"100.0", "property3": "100.0"}}]}]}}
+things:
+	id: zhanwan20200425
+	type: Gateway
+		items: 
+		bad: [ property1 property2 ]
+		ts: 2020-04-29-02-27-10
+B		properties: {property2=100.0, property1=100.0, property3=100.0}
+message.java:
+6org.json.JSONException: JSONObject["body"] not found.
+{}
+things:
+message.java:
+8org.json.JSONException: JSONObject["things"] not found.
+{"body":{}}
+things:
+{"body":{"things":[]}}
+things:
+thing.java:
+4org.json.JSONException: JSONObject["id"] not found.
+thing.java:
+4org.json.JSONException: JSONObject["id"] not found.
+{"body":{"things":[{},{}]}}
+things:
+
+	id: null
+	type: null
+		items: 
